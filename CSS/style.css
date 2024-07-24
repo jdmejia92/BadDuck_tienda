@@ -1,5 +1,6 @@
 :root {
-  --title-font: 'Panchang'
+  --title-font: 'Panchang';
+  --primary-color: rgb(255, 177, 0);
 }
 
 @font-face {
@@ -7,20 +8,41 @@
   src: url('/Fuentes/Panchang_Complete/Fonts/TTF/Panchang-Variable.ttf');
 }
 
+/* Header */
 .header {
   background-image: url(/img/header-footer.png);
-  position: relative;
   background-size: cover;
-  height: 100px;
-  border: 0;
-  margin-top: -0.5px;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100dvw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
+.logo-md {
+  height: 90px;
+}
+
+@media(max-width: 575px) {
+  .logo-small{
+    height: 60px;
+  }
+}
+
+@media(max-width: 375px){
+  .logo-small {
+    height: 50px;
+  }
+}
+
+/* Navbar */
 .nav-text-header, .nav-text-header:visited {
   font-family: var(--title-font);
   font-weight: 600;
   text-transform: uppercase;
-  color: rgb(255, 177, 0);
+  color: var(--primary-color);
 }
 
 .nav-text-header:hover {
@@ -37,13 +59,28 @@
   margin-right: 2rem;
 }
 
+/* Body */
 .background {
   background-image: url(/img/Fondo.png);
-  max-height: 100vh;
-  overflow: auto;
-  position: relative;
   background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
   background-repeat: no-repeat;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: 85px;
+}
+
+@media(max-width: 1400px) {
+  .background {
+    height: 125rem;
+    min-width: 100vw;
+    justify-content: end;
+    align-items: center;
+  }
 }
 
 section {
@@ -56,6 +93,18 @@ section {
   align-items: center;
   height: 75dvh;
   padding: 0;
+}
+
+.container-content {
+  position: relative;
+  align-items: center;
+  height: 75dvh;
+  padding: 0;
+}
+
+.container-content h3, .container-content h4 {
+  font-family: var(--title-font);
+  color: var(--primary-color);
 }
 
 .big-logo::before {
@@ -75,16 +124,89 @@ section {
 .big-logo p {
   position: relative;
   font-family: var(--title-font);
-  font-size: 1.6rem;
 }
 
+/* Imagen */
+.text-introduction {
+  font-size: 1.4rem;
+}
+
+.image-size {
+  height: 400px;
+}
+
+@media(max-width:1610px){
+  .image-size {
+    height: 350px;
+  }
+}
+
+/* Imagen Polo */
+.imagen-polo-cube {
+  height: 250px;
+  width: 350px;
+  box-shadow: 0px 0px 5px 0.5px var(--primary-color);
+}
+
+@media (max-width: 1400px) {
+  .imagen-polo-cube {
+    height: 250px;
+    width: 350px;
+  }
+}
+
+.imagen-polo-tall {
+  height: 500px;
+  box-shadow: 0px 0px 5px 0.5px var(--primary-color);
+}
+
+@media (max-width: 1400px) {
+  .imagen-polo-tall {
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+  }
+}
+
+section div img:hover {
+  transform: scale(1.04);
+  transition: 0.3s;
+}
+
+/* Text Main */
+@media (max-width: 745px) {
+  .text-introduction {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .text-introduction {
+    font-size: 0.90rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .text-introduction {
+    font-size: 0.7rem;
+  }
+}
+
+/* Footer */
 .footer {
   background-image: url(/img/header-footer.png);
   background-size: cover;
-  height: 100px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100dvw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .whatsapp {
