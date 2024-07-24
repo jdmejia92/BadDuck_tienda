@@ -1,0 +1,117 @@
+:root {
+  --title-font: 'Panchang'
+}
+
+@font-face {
+  font-family: 'Panchang';
+  src: url('/Fuentes/Panchang_Complete/Fonts/TTF/Panchang-Variable.ttf');
+}
+
+.header {
+  background-image: url(/img/header-footer.png);
+  position: relative;
+  background-size: cover;
+  height: 100px;
+  border: 0;
+  margin-top: -0.5px;
+}
+
+.nav-text-header, .nav-text-header:visited {
+  font-family: var(--title-font);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(255, 177, 0);
+}
+
+.nav-text-header:hover {
+  color: white;
+}
+
+.nav-text-header:active {
+  color: lightgray;
+}
+
+.ham-width {
+  width: 25px;
+  padding: 0;
+  margin-right: 2rem;
+}
+
+.background {
+  background-image: url(/img/Fondo.png);
+  max-height: 100vh;
+  overflow: auto;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  max-height: 100vh;
+  position: relative;
+}
+
+.big-logo {
+  position: relative;
+  align-items: center;
+  height: 75dvh;
+  padding: 0;
+}
+
+.big-logo::before {
+  content: "";
+  background-image: url(/img/LOGO\ PATO.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.big-logo p {
+  position: relative;
+  font-family: var(--title-font);
+  font-size: 1.6rem;
+}
+
+.footer {
+  background-image: url(/img/header-footer.png);
+  background-size: cover;
+  height: 100px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.whatsapp {
+  width: 35px;
+  object-fit: cover;
+  object-position: -0.5%;
+}
+
+.facebook {
+  width: 35px;
+  object-fit: cover;
+  object-position: 25%;
+}
+
+.instagram {
+  width: 35px;
+  object-fit: cover;
+}
+
+.x {
+  width: 35px;
+  object-fit: cover;
+  object-position: 75%;
+}
+
+.tiktok {
+  width: 35px;
+  object-fit: cover;
+  object-position: 100%;
+}
