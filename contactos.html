@@ -38,21 +38,28 @@
       </div>
     </header>
     <section class="row d-block text-center">
-      <div class="container container-content px-5">
+      <div class="container container-form col-6">
+        <div class="mt-5">
+          <h2 class="text-uppercase">Contactanos</h2>
+        </div>
         <form class="form">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
-            <input type="email" class="form-control text-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div class="mb-3 text-start">
+            <label for="exampleInputName" class="form-label form-label-badduck text-uppercase">Nombre</label>
+            <input name="Nombre" type="text" class="form-control rounded-pill input-badduck" id="exampleInputName" placeholder="Escribe tu nombre aqui">
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+          <div class="mb-3 text-start">
+            <label for="exampleInputEmail" class="form-label form-label-badduck text-uppercase">Email</label>
+            <input name="Email" type="email" class="form-control rounded-pill input-badduck" id="exampleInputEmail" placeholder="Escribe tu email aqui">
           </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <div class="mb-3 text-start">
+            <label for="exampleInputNumber" class="form-label form-label-badduck text-uppercase">Numero</label>
+            <input name="Numero" type="number" class="form-control rounded-pill input-badduck" id="exampleInputNumber" placeholder="Escribe tu numero aqui">
           </div>
-          <button type="submit" class="btn btn-warning">Enviar</button>
+          <div class="mb-3 text-start">
+            <label for="exampleInputMensaje" class="form-label form-label-badduck text-uppercase">Mensaje</label>
+            <input name="Mensaje" type="textarea" class="form-control textarea-badduck" id="exampleInputMensaje" placeholder="Dejános tu mensaje aqui">
+          </div>
+          <button type="submit" class="button-badduck mt-2 text-uppercase">Enviar</button>
         </form>
       </div>
     </section>

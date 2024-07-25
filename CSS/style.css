@@ -239,6 +239,42 @@ section div img:hover {
   }
 }
 
+/* form */
+.container-form {
+  margin-top: 140px;
+}
+
+.form-label-badduck {
+  font-family: var(--title-font);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.input-badduck {
+  opacity: 0.4;
+  font-family: var(--title-font);
+  color: white;
+}
+
+.textarea-badduck {
+  border-radius: 15px;
+  height: 150px;
+  opacity: 0.4;
+  font-family: var(--title-font);
+  color: white;
+}
+
+.button-badduck {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--title-font);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  width: 200px;
+  height: 40px;
+}
+
 /* Footer */
 .footer {
   background-image: url(/img/header-footer.png);
