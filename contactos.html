@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-<body class="background">
+<body class="background" style="overflow-x: hidden;">
   <div class="d-block text-center">
     <header class="header d-flex z-3">
       <div class="d-sm-block d-xl-none col-6 logo-md text-center p-sm-2 p-3">
@@ -37,8 +37,24 @@
         </nav>
       </div>
     </header>
-    <section class="row">
-      
+    <section class="row d-block text-center">
+      <div class="container container-content px-5">
+        <form class="form">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
+            <input type="email" class="form-control text-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-warning">Enviar</button>
+        </form>
+      </div>
     </section>
     <footer class="row footer card-footer">
       <div class="container d-flex justify-content-center align-items-center">
