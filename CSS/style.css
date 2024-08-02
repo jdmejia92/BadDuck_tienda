@@ -169,10 +169,16 @@ h4, h3, h2 {
 .imagen-polo-cube {
   height: 250px;
   width: 350px;
-  box-shadow: 0px 0px 5px 0.5px var(--primary-color);
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1700px) {
+  .imagen-polo-cube {
+    height: 188px;
+    width: 288px;
+  }
+}
+
+@media (max-width: 1399px) {
   .imagen-polo-cube {
     height: 250px;
     width: 350px;
@@ -181,10 +187,15 @@ h4, h3, h2 {
 
 .imagen-polo-tall {
   height: 500px;
-  box-shadow: 0px 0px 5px 0.5px var(--primary-color);
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1700px) {
+  .imagen-polo-tall {
+    height: 380px;
+  }
+}
+
+@media (max-width: 1399px) {
   .imagen-polo-tall {
     height: 250px;
     width: 350px;
@@ -281,7 +292,7 @@ section div img:hover {
   background-size: cover;
   background-repeat: no-repeat;
   height: 90px;
-  width: 100dvw;
+  min-width: 100dvw;
   position: fixed;
   bottom: 0;
   left: 0;
