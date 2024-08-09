@@ -21,6 +21,25 @@
   left: 0;
 }
 
+#navbarNav {
+  margin-top: 0px;
+}
+
+@media(max-width: 1200px){
+  #navbarNav {
+    height: 145px;
+    margin-top: 89px;
+    background-image: none;
+    background-color: black;
+    margin-bottom: 0;
+    
+  }
+}
+
+li {
+  list-style: none;
+}
+
 .logo-md {
   height: 90px;
 }
