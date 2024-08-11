@@ -1,3 +1,12 @@
+/* Reset */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+/* Variables */
 :root {
   --title-font: 'Panchang';
   --primary-color: rgb(255, 177, 0);
@@ -21,6 +30,23 @@
   left: 0;
 }
 
+.logo-md {
+  height: 90px;
+}
+
+@media(max-width: 575px) {
+  .logo-small{
+    height: 60px;
+  }
+}
+
+@media(max-width: 375px){
+  .logo-small {
+    height: 50px;
+  }
+}
+
+/* Navbar */
 #navbarNav {
   margin-top: 0px;
 }
@@ -40,23 +66,6 @@ li {
   list-style: none;
 }
 
-.logo-md {
-  height: 90px;
-}
-
-@media(max-width: 575px) {
-  .logo-small{
-    height: 60px;
-  }
-}
-
-@media(max-width: 375px){
-  .logo-small {
-    height: 50px;
-  }
-}
-
-/* Navbar */
 .nav-text-header, .nav-text-header:visited {
   font-family: var(--title-font);
   font-weight: 600;
@@ -169,11 +178,30 @@ h4, h3, h2 {
   font-family: var(--title-font);
 }
 
-/* Imagen */
+/* Texto pagina index */
 .text-introduction {
   font-size: 1.4rem;
 }
 
+@media (max-width: 745px) {
+  .text-introduction {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .text-introduction {
+    font-size: 0.90rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .text-introduction {
+    font-size: 0.7rem;
+  }
+}
+
+/* Pagina catalogo */
 .image-size {
   height: 400px;
 }
@@ -184,7 +212,7 @@ h4, h3, h2 {
   }
 }
 
-/* Imagen Polo */
+/* Imagenes Polos */
 .imagen-polo-cube {
   height: 250px;
   width: 350px;
@@ -227,8 +255,7 @@ section div img:hover {
   transition: 0.3s;
 }
 
-/* Promociones */
-
+/* Pagina promociones */
 .img-marcas {
   max-width: 609px;
 }
@@ -250,26 +277,7 @@ section div img:hover {
   }
 }
 
-/* Text Main */
-@media (max-width: 745px) {
-  .text-introduction {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .text-introduction {
-    font-size: 0.90rem;
-  }
-}
-
-@media (max-width: 300px) {
-  .text-introduction {
-    font-size: 0.7rem;
-  }
-}
-
-/* form */
+/* Pagina form */
 .container-form {
   margin-top: 140px;
 }
