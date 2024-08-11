@@ -9,7 +9,10 @@ html {
 /* Variables */
 :root {
   --title-font: 'Panchang';
-  --primary-color: rgb(255, 177, 0);
+  --primary-color: #FFB100;
+  --white: #ffffff;
+  --black: #000000;
+  --text-active: #D3D3D3;
 }
 
 @font-face {
@@ -56,7 +59,7 @@ html {
     height: 145px;
     margin-top: 89px;
     background-image: none;
-    background-color: black;
+    background-color: var(--black);
     margin-bottom: 0;
     
   }
@@ -74,11 +77,11 @@ li {
 }
 
 .nav-text-header:hover {
-  color: white;
+  color: var(--white);
 }
 
 .nav-text-header:active {
-  color: lightgray;
+  color: var(--text-active);
 }
 
 .ham-width {
@@ -113,7 +116,7 @@ li {
 
 .background-promo {
   background-image: url(/img/Fondo.png);
-  box-shadow: inset 0px 4px 200px #000000;
+  box-shadow: inset 0px 4px 200px var(--black);
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
@@ -291,7 +294,7 @@ section div img:hover {
 .input-badduck {
   opacity: 0.4;
   font-family: var(--title-font);
-  color: white;
+  color: var(--white);
 }
 
 .textarea-badduck {
@@ -299,12 +302,10 @@ section div img:hover {
   height: 150px;
   opacity: 0.4;
   font-family: var(--title-font);
-  color: white;
 }
 
 .button-badduck {
   background-color: var(--primary-color);
-  color: white;
   font-family: var(--title-font);
   border-radius: 20px;
   font-weight: 500;
