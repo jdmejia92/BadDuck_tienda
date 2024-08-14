@@ -1,3 +1,9 @@
+/* Import */
+@font-face {
+  font-family: 'Panchang';
+  src: url('/Fuentes/Panchang_Complete/Fonts/TTF/Panchang-Variable.ttf');
+}
+
 /* Reset */
 html {
   margin: 0;
@@ -13,11 +19,6 @@ html {
   --white: #ffffff;
   --black: #000000;
   --text-active: #D3D3D3;
-}
-
-@font-face {
-  font-family: 'Panchang';
-  src: url('/Fuentes/Panchang_Complete/Fonts/TTF/Panchang-Variable.ttf');
 }
 
 /* Header */
@@ -54,14 +55,22 @@ html {
   margin-top: 0px;
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1199px){
   #navbarNav {
+    width: 35%;
+    left: 58%;
     height: 145px;
     margin-top: 89px;
     background-image: none;
     background-color: var(--black);
     margin-bottom: 0;
-    
+  }
+}
+
+@media(max-width: 767px){
+  #navbarNav {
+    width: 100%;
+    left: 0;
   }
 }
 
