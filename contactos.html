@@ -8,7 +8,7 @@
   rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="/CSS/style.css">
 </head>
-<body class="background" style="overflow: hidden;">
+<body class="background">
   <div class="d-block text-center">
     <header class="header d-flex z-3">
       <div class="d-sm-block d-xl-none col-6 logo-md text-center p-sm-2 p-3">
@@ -50,21 +50,19 @@
         </div>
         <form class="form" onsubmit="validarFormulario(event)">
           <div class="mb-3 text-start">
-            <label for="exampleInputName" class="form-label form-label-badduck text-uppercase">Nombre</label>
+            <label for="nombre" class="form-label form-label-badduck text-uppercase">Nombre</label>
             <input name="Nombre" type="text" class="form-control rounded-pill input-badduck" id="nombre" placeholder="Escribe tu nombre aqui" aria-describedby="emailHelp">
             <span id="errorNombre" class="error"></span>
           </div>
           <div class="mb-3 text-start">
-            <label for="exampleInputEmail" class="form-label form-label-badduck text-uppercase">Email</label>
+            <label for="email" class="form-label form-label-badduck text-uppercase">Email</label>
             <input name="Email" type="email" class="form-control rounded-pill input-badduck" id="email" placeholder="Escribe tu email aqui">
             <span id="errorEmail" class="error"></span>
           </div>
           <div class="mb-3 text-start">
-            <label for="exampleInputNumber" class="form-label form-label-badduck text-uppercase">Numéro</label>
-            <input name="Numero" type="number" class="form-control rounded-pill input-badduck" id="exampleInputNumber" placeholder="Escribe tu numero aqui">
-            <div class="invalid-feedback">
-              Escribe tu numéro aqui.
-            </div>
+            <label for="telefono" class="form-label form-label-badduck text-uppercase">Numéro</label>
+            <input name="Numero" type="number" class="form-control rounded-pill input-badduck" id="telefono" placeholder="Escribe tu numero aqui">
+            <span id="errorTelefono" class="error"></span>
           </div>
           <div class="mb-3 text-start">
             <label for="exampleInputMensaje" class="form-label form-label-badduck text-uppercase">Mensaje</label>

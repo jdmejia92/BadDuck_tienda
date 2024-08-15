@@ -106,7 +106,7 @@ li {
 .background {
   background-image: url(/img/Fondo.png);
   background-size: cover;
-  min-height:80vh;
+  min-height:100vh;
   min-width: 100vw;
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -198,6 +198,12 @@ h4, h3, h2 {
 @media(max-width:1610px){
   .image-size {
     height: 350px;
+}
+}
+
+@media(max-width:1200px){
+  .image-size {
+    height: 330px;
   }
 }
 
@@ -207,12 +213,12 @@ h4, h3, h2 {
   width: 350px;
 }
 
-@media (max-width: 1700px) {
+/* @media (max-width: 1700px) {
   .imagen-polo-cube {
     height: 188px;
     width: 288px;
   }
-}
+} */
 
 @media (max-width: 1399px) {
   .imagen-polo-cube {
@@ -225,11 +231,11 @@ h4, h3, h2 {
   height: 500px;
 }
 
-@media (max-width: 1700px) {
+/* @media (max-width: 1700px) {
   .imagen-polo-tall {
     height: 380px;
   }
-}
+} */
 
 @media (max-width: 1399px) {
   .imagen-polo-tall {
@@ -306,6 +312,7 @@ section div img:hover {
 /* Form */
 .container-form {
   margin-top: 140px;
+  margin-bottom: 140px;
 }
 
 .form-label-badduck {
@@ -349,6 +356,11 @@ section div img:hover {
   font-size: 1.3rem;
   width: 200px;
   height: 40px;
+}
+
+/* Form Errors */
+.error {
+  color: rgba(237, 8, 8, 0.8);
 }
 
 /* Footer */
