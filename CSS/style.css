@@ -17,8 +17,11 @@ html {
   --title-font: 'Panchang';
   --primary-color: #FFB100;
   --white: #ffffff;
+  --form-letter: rgba();
+  --form-placeholder-letter: rgba(256,256,256,0.5);
+  --background-form: rgba(256,256,256,0.4);
   --black: #000000;
-  --text-active: #D3D3D3;
+  --text-active-header: #D3D3D3;
 }
 
 /* Header */
@@ -90,7 +93,7 @@ li {
 }
 
 .nav-text-header:active {
-  color: var(--text-active);
+  color: var(--text-active-header);
 }
 
 .ham-width {
@@ -103,15 +106,12 @@ li {
 .background {
   background-image: url(/img/Fondo.png);
   background-size: cover;
-  min-height: 100vh;
+  min-height:80vh;
   min-width: 100vw;
   background-repeat: no-repeat;
   overflow-x: hidden;
   top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin-top: 85px;
+  margin-top: 90px;
 }
 
 @media(max-width: 1400px) {
@@ -120,30 +120,7 @@ li {
     min-width: 100vw;
     justify-content: end;
     align-items: center;
-  }
-}
-
-.background-promo {
-  background-image: url(/img/Fondo.png);
-  box-shadow: inset 0px 4px 200px var(--black);
-  background-size: cover;
-  min-height: 100vh;
-  min-width: 100vw;
-  background-repeat: no-repeat;
-  overflow-x: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin-top: 85px;
-}
-
-@media(max-width: 1400px) {
-  .background-promo {
-    height: 40rem;
-    min-width: 100vw;
-    justify-content: end;
-    align-items: center;
+    background-position: center;
   }
 }
 
@@ -268,8 +245,34 @@ section div img:hover {
 }
 
 /* Pagina promociones */
+.background-promo {
+  background-image: url(/img/Fondo.png);
+  background-size: cover;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  top: 0;
+  margin-top: 90px;
+}
+
+@media(max-width: 1400px) {
+  .background-promo {
+    height: 70rem;
+    min-width: 100vw;
+    justify-content: end;
+    align-items: center;
+    overflow: auto;
+  }
+}
+
 .img-marcas {
   max-width: 609px;
+}
+
+@media (max-width: 600px) {
+  .img-marcas {
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -278,18 +281,29 @@ section div img:hover {
   }
 }
 
+/* Imagen modelo */
+.model-promo-big {
+  mask-image: linear-gradient(rgb(0,0,0) 60%, transparent);
+  margin-top: 3rem;
+  bottom: 0;
+}
+
 .model-promo {
+  mask-image: linear-gradient(rgb(0,0,0) 60%, transparent);
   max-height: 610px;
+  bottom: 0;
 }
 
 @media (max-width: 400px) {
   .model-promo {
+    mask-image: linear-gradient(rgb(0,0,0) 60%, transparent);
     max-height: 300px;
-    margin-top: 5rem;
+    bottom: 0;
   }
 }
 
-/* Pagina form */
+/* Pagina contactanos */
+/* Form */
 .container-form {
   margin-top: 140px;
 }
@@ -301,16 +315,30 @@ section div img:hover {
 }
 
 .input-badduck {
-  opacity: 0.4;
   font-family: var(--title-font);
   color: var(--white);
+  background-color: var(--background-form);
+}
+
+.input-badduck::placeholder {
+  font-family: var(--title-font);
+  color: var(--form-placeholder-letter);
+}
+
+.input-badduck:focus{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.input-badduck:active {
+  font-family: var(--title-font);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .textarea-badduck {
   border-radius: 15px;
   height: 150px;
-  opacity: 0.4;
-  font-family: var(--title-font);
 }
 
 .button-badduck {

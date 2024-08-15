@@ -8,7 +8,7 @@
   rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="/CSS/style.css">
 </head>
-<body class="background" style="overflow-x: hidden;">
+<body class="background" style="overflow: hidden;">
   <div class="d-block text-center">
     <header class="header d-flex z-3">
       <div class="d-sm-block d-xl-none col-6 logo-md text-center p-sm-2 p-3">
@@ -51,7 +51,7 @@
         <form class="form was-validated">
           <div class="mb-3 text-start">
             <label for="exampleInputName" class="form-label form-label-badduck text-uppercase">Nombre</label>
-            <input name="Nombre" type="text" class="form-control rounded-pill input-badduck" id="exampleInputName" placeholder="Escribe tu nombre aqui">
+            <input name="Nombre" type="text" class="form-control rounded-pill input-badduck" id="exampleInputName" placeholder="Escribe tu nombre aqui" aria-describedby="emailHelp">
           </div>
           <div class="mb-3 text-start">
             <label for="exampleInputEmail" class="form-label form-label-badduck text-uppercase">Email</label>
@@ -63,7 +63,7 @@
           </div>
           <div class="mb-3 text-start">
             <label for="exampleInputMensaje" class="form-label form-label-badduck text-uppercase">Mensaje</label>
-            <input name="Mensaje" type="textarea" class="form-control textarea-badduck" id="exampleInputMensaje" placeholder="Dejános tu mensaje aqui">
+            <textarea name="Mensaje" class="form-control input-badduck textarea-badduck" id="exampleInputMensaje" placeholder="Dejános tu mensaje aqui"></textarea>
           </div>
           <button type="submit" class="button-badduck mt-2 text-uppercase">Enviar</button>
         </form>
