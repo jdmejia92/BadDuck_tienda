@@ -213,13 +213,6 @@ h4, h3, h2 {
   width: 350px;
 }
 
-/* @media (max-width: 1700px) {
-  .imagen-polo-cube {
-    height: 188px;
-    width: 288px;
-  }
-} */
-
 @media (max-width: 1399px) {
   .imagen-polo-cube {
     height: 250px;
@@ -230,12 +223,6 @@ h4, h3, h2 {
 .imagen-polo-tall {
   height: 500px;
 }
-
-/* @media (max-width: 1700px) {
-  .imagen-polo-tall {
-    height: 380px;
-  }
-} */
 
 @media (max-width: 1399px) {
   .imagen-polo-tall {
@@ -351,16 +338,33 @@ section div img:hover {
 .button-badduck {
   background-color: var(--primary-color);
   font-family: var(--title-font);
+  color: var(--white);
   border-radius: 20px;
   font-weight: 500;
   font-size: 1.3rem;
   width: 200px;
   height: 40px;
+  border: 0px;
 }
 
 /* Form Errors */
 .error {
   color: rgba(237, 8, 8, 0.8);
+}
+
+/* Form Success */
+.success {
+  top: 16rem;
+  left: 27rem;
+  position: absolute;
+  color: var(--white);
+  font-family: 'Panchang';
+  max-width: 50rem;
+}
+
+.success h1 {
+  font-size: 5rem;
+  font-weight: 700;
 }
 
 /* Footer */
