@@ -48,18 +48,23 @@
         <div class="mt-5">
           <h2 class="text-uppercase">Contáctanos</h2>
         </div>
-        <form class="form was-validated">
+        <form class="form" onsubmit="validarFormulario(event)">
           <div class="mb-3 text-start">
             <label for="exampleInputName" class="form-label form-label-badduck text-uppercase">Nombre</label>
-            <input name="Nombre" type="text" class="form-control rounded-pill input-badduck" id="exampleInputName" placeholder="Escribe tu nombre aqui" aria-describedby="emailHelp">
+            <input name="Nombre" type="text" class="form-control rounded-pill input-badduck" id="nombre" placeholder="Escribe tu nombre aqui" aria-describedby="emailHelp">
+            <span id="errorNombre" class="error"></span>
           </div>
           <div class="mb-3 text-start">
             <label for="exampleInputEmail" class="form-label form-label-badduck text-uppercase">Email</label>
-            <input name="Email" type="email" class="form-control rounded-pill input-badduck" id="exampleInputEmail" placeholder="Escribe tu email aqui">
+            <input name="Email" type="email" class="form-control rounded-pill input-badduck" id="email" placeholder="Escribe tu email aqui">
+            <span id="errorEmail" class="error"></span>
           </div>
           <div class="mb-3 text-start">
             <label for="exampleInputNumber" class="form-label form-label-badduck text-uppercase">Numéro</label>
             <input name="Numero" type="number" class="form-control rounded-pill input-badduck" id="exampleInputNumber" placeholder="Escribe tu numero aqui">
+            <div class="invalid-feedback">
+              Escribe tu numéro aqui.
+            </div>
           </div>
           <div class="mb-3 text-start">
             <label for="exampleInputMensaje" class="form-label form-label-badduck text-uppercase">Mensaje</label>
@@ -96,5 +101,6 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/JS/validation.js"></script>
 </body>
 </html>
