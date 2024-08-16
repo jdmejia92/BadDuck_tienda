@@ -11,5 +11,10 @@ Consta de 4 vistas o paginas
 
 1. Inicio
 2. Catalogo
+   1. Polos
 3. Contacto
 4. Promociones
+
+### Website
+
+- http://badduckstore.infinityfreeapp.com/index.html
