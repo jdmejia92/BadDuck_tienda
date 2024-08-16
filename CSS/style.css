@@ -396,7 +396,7 @@ section div img:hover {
   color: rgba(237, 8, 8, 0.8);
 }
 
-/* Form Success */
+/* pagina confirmacion */
 .success {
   top: 16rem;
   left: 27rem;
@@ -409,6 +409,26 @@ section div img:hover {
 .success h1 {
   font-size: 5rem;
   font-weight: 700;
+}
+
+@media(max-width: 430px){
+  .success {
+    top: 21rem;
+    left: 3rem;
+    position: absolute;
+    color: var(--white);
+    font-family: 'Panchang';
+    max-width: 5rem;
+  }
+
+  .success h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+
+  section {
+    max-width: 430px;
+  }
 }
 
 /* Footer */
