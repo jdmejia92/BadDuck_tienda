@@ -356,6 +356,10 @@ section div img:hover {
   .section-contacto {
     max-width: 430px;
   }
+
+  form {
+    margin-top: 2.7rem;
+  }
 }
 
 .input-badduck::placeholder {
